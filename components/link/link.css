@@ -1,0 +1,37 @@
+.link {
+  width: fit-content;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  margin-top: -2px;
+  transition: all .3s;
+  display: block;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link-white {
+  color: var(--white)
+} .link-white::after {
+  background: var(--white);
+}
+
+.link-black {
+  color: var(--black)
+} .link-black::after {
+  background: var(--black);
+}
+
+.link-block {
+  width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
