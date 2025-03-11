@@ -1,0 +1,25 @@
+.alert {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 8%;
+  transform: translateY(50%);
+  padding: calc(var(--adpt) *16) calc(var(--adpt) *32);
+  border-radius: calc(var(--adpt) *24);
+  background: #178009d0;
+  backdrop-filter: blur(4px);
+  transition: all .3s;
+}
+
+.alert-btn {
+  margin-top: calc(var(--adpt) *8);
+  margin-left: auto;
+  padding: calc(var(--adpt) *4) calc(var(--adpt) *16);
+  border-radius: calc(var(--adpt) *12);
+  border: 1px solid var(--white);
+  display: block;
+}
+
+.alert-hidden {
+  transform: translateY(-100%);
+}
