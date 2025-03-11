@@ -1,0 +1,26 @@
+.inpt-num {
+  padding: 0 calc(var(--adpt) *8);
+  border: 1px solid var(--white);
+  border-radius: 100vw;
+  display: flex;
+}
+
+.inpt-num-inpt::-webkit-inner-spin-button,
+.inpt-num-inpt::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inpt-num-inpt {
+  width: calc(var(--adpt) *70);
+  height: calc(var(--adpt) *20);
+  text-align: center;
+  font-size: calc(var(--adpt) *20);
+  align-self: center;
+}
+
+.inpt-num-btn {
+  align-self: center;
+  height: fit-content;
+  font-size: calc(var(--adpt) *20);
+}
