@@ -1,0 +1,88 @@
+.card {
+  width: fit-content;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom-right-radius: calc(var(--adpt) *12);
+  background-color: var(--white);
+  justify-items: center;
+}
+
+.card-img {
+  width: calc(var(--adpt) *250);
+  height: calc(var(--adpt) *250);
+  object-fit: cover;
+  object-position: center;
+  background-repeat: repeat;
+  transition: transform .3s;
+  display: inline-block;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  position: relative;
+  height: 30%;
+  border-radius: 0 0 calc(var(--adpt) *16);
+  padding: calc(var(--adpt) *8);
+  background: var(--black);
+  text-align: center;
+  font-size: calc(var(--adpt) *20);
+  gap: calc(var(--adpt) *8);
+  display: grid;
+}
+
+.card-text {
+  text-align: center;
+  gap: calc(var(--adpt) *2);
+  display: grid;
+}
+
+.card-price {
+  color: var(--yellow);
+}
+
+.card-form {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  gap: calc(var(--adpt) *18);
+  display: flex;
+}
+
+.card-btn {
+  font-size: calc(var(--adpt) *20);
+  white-space: nowrap;
+  padding: calc(var(--adpt) *4) calc(var(--adpt) *16);
+  border: 1px solid var(--white);
+  border-radius: 100vw;
+  transition: all .3s;
+}
+
+.card-btn:hover {
+  padding: calc(var(--adpt) *4) calc(var(--adpt) *16);
+  border: 1px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+}
+
+.card-type {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+  bottom: 6%;
+  padding: calc(var(--adpt) *4) calc(var(--adpt) *12);
+  border-radius: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc(var(--adpt) *16);
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+.card-type-new {
+  background: #5e85f5;
+} .card-type-top {
+  background: #dd1a21;
+}
