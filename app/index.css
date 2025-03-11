@@ -1,0 +1,55 @@
+/* F O N T S   F A M I L Y */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+  /* C O L O R S */
+  --white: #fff;
+  --gray: #d3d3d3;
+  --dark-gray: #5a5a5a;
+  --black: #1C1818;
+  --yellow: #edf932;
+  --yellow-d: #e3ad33;
+  /* F O N T S */
+  --unbounded: "Unbounded", serif;
+  --montserrat: "Montserrat", serif;
+  --jaldi: "Jaldi", serif;
+  /* A D A P T I V E */
+  --window: clamp(100vw, 100vw, 100vw);
+  --adpt: calc(var(--window) / 1800);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--montserrat);
+  background: var(--gray);
+  color: var(--white);
+}
+
+button {
+  color: var(--white);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  color: var(--white);
+  background: transparent;
+  border: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.relative {
+  position: relative;
+}
