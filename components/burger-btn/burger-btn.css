@@ -1,0 +1,54 @@
+.side-bar-btns {
+  position: relative;
+  display: flex;
+}
+
+.open-side-line, .close-side-line {
+  width: calc(var(--adpt) *26);
+  height: 1px;
+  border-radius: 100vw;
+  background: var(--white);
+  transition: all .3s;
+}
+
+.close-side-line {
+  height: calc(var(--adpt) *1);
+}
+
+.open-side-bar {
+  position: absolute;
+  overflow: hidden;
+  align-self: center;
+  gap: calc(var(--adpt) *6);
+  transition: all .3s;
+  display: grid;
+}
+
+.open-side-bar.hidden {
+  gap: 0;
+  height: 0;
+}
+
+.open-side-bar.hidden >* {
+  height: 0;
+}
+
+.close-side-bar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-side-line {
+  position: absolute;
+  transform: rotateZ(45deg);
+}
+
+.close-side-bar > :nth-child(2) {
+  transform: rotateZ(-45deg);
+}
+
+.close-side-bar.hidden >* {
+  width: 0px;
+  transform: rotateZ(0deg);
+}
