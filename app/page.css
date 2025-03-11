@@ -1,0 +1,29 @@
+.main-sec {
+  padding: 0 calc(var(--adpt) *200);
+  background: var(--yellow-d);
+  gap: calc(var(--adpt) *60);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.main-img {
+  width: clamp(10px, 50vw, 70vh);
+  height: clamp(10px, 50vw, 70vh);
+}
+
+.main-text {
+  text-transform: uppercase;
+  gap: calc(var(--adpt) *34);
+  display: grid;
+}
+
+.main-title {
+  font-family: var(--unbounded);
+  font-size: calc(var(--adpt) *64);
+  line-height: 1.2em;
+}
+
+.main-desc {
+  font-size: calc(var(--adpt) *28);
+}
