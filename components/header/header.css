@@ -1,0 +1,31 @@
+.header {
+  padding: calc(var(--adpt) * 16) calc(var(--adpt) * 240);
+  background: var(--black);
+  font-size: calc(var(--adpt) *24);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header-form {
+  width: calc(var(--adpt) * 360);
+  padding: calc(var(--adpt) * 6) calc(var(--adpt) * 16);
+  border: 1px solid var(--white);
+  border-radius: 100vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-search {
+  width: calc(var(--adpt) *320);
+  font-size: calc(var(--adpt) *18);
+}
+
+.header-search-btn > img {
+  width: calc(var(--adpt) *28);
+}
+
+.header-nav {
+  gap: calc(var(--adpt) * 16);
+  display: flex;
+}
